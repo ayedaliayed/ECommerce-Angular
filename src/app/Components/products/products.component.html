@@ -1,0 +1,103 @@
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @for( p of filterproducts; track p.id ;)
+    {
+
+    @if(p.quantity != 0) 
+    {
+    <div class="col">
+
+        <div class="card">
+            <img [src]="p.img" class="card-img-top" alt="...">
+            <div class="card-body" [style.background-color]="(p.quantity == 1) ? 'yellow' : 'white'">
+
+                <h5 class="card-title">{{ p.name }}</h5>
+                <p class="card-text">Price: {{ p.price |currency}}</p>
+
+                @switch(p.quantity)
+                {
+                    @case(1){<p>Last One</p>}
+                    @case(2){<p>Last Tow</p>}
+                    @default {<p> {{p.quantity}}</p>}
+                }
+
+                
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <input type="number" #inp>
+                <button class="btn btn-primary" (click)="Buy(p.price, inp.value, p.id)" >Buy</button>
+                <button class="btn btn-success mx-2" (click)="GoDetailspage(p.id)" >Details</button>    <!-- [routerLink]="['/details',p.id]"  -->
+            </div>
+        </div>
+
+    </div>
+}
+    }
+    @empty
+    {
+        <h1>No Products</h1>
+    }
+    <!-- </ng-container> -->
+</div>
+
+
+
+<app-cart [pro]="pro"></app-cart>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+     <div class="col" *ngFor="let p of proudtcs" [class.d-non]="p.CaID !=selectCatID"> -->
+
+<!-- <div class="col" *ngFor="let p of proudtcs ; trackBy:trackItems" [class.d-none]="p.CaID != selectCatID || p.quantity == 0 || p.quantity <= 0"> -->
+
+
+<!-- ngIf erorrrrrrr -->
+<!-- <div class="col" *ngFor="let p of proudtcs" *ngIf="p.CaID == selectCatID || p.quantity != 0" > -->
+
+
+<!-- <div class="card">
+            <img [src]="p.img" class="card-img-top" alt="...">
+
+            
+            <div class="card-body" [style.background-color]="(p.quantity == 1) ? 'yellow' : 'white'">
+                <h5 class="card-title">{{p.name}}</h5>
+                <p class="card-text">Price : {{p.price}}</p>
+                <p class="card-text">Quantity : {{p.quantity}}</p>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                - refrence tag -
+                <input type="number" #inp>
+                <button class="btn btn-primary" (click)="Buy(p.price, inp.value, p.id)">Buy</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->

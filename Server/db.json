@@ -1,0 +1,136 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Dell",
+      "quantity": 3,
+      "price": 33000,
+      "img": "assets\\download.jpeg",
+      "CaID": 1
+    },
+    {
+      "id": "2",
+      "name": "Hp",
+      "quantity": 0,
+      "price": 22000,
+      "img": "assets\\download (1).jpeg",
+      "CaID": 1
+    },
+    {
+      "id": "3",
+      "name": "Samsung",
+      "quantity": 3,
+      "price": 20000,
+      "img": "assets\\download (2).jpeg",
+      "CaID": 2
+    },
+    {
+      "id": "4",
+      "name": "Oppo",
+      "quantity": 1,
+      "price": 33000,
+      "img": "assets\\download (3).jpeg",
+      "CaID": 2
+    },
+    {
+      "id": "5",
+      "name": "Samsung",
+      "quantity": 3,
+      "price": 20000,
+      "img": "assets\\download (4).jpeg",
+      "CaID": 2
+    },
+    {
+      "id": "6",
+      "name": "Oppo",
+      "quantity": 1,
+      "price": 33000,
+      "img": "assets\\download (5).jpeg",
+      "CaID": 2
+    },
+    {
+      "id": "7",
+      "name": "Tab Oppo",
+      "quantity": 3,
+      "price": 33000,
+      "img": "assets\\61Yj0rzrpeL._AC_UF1000,1000_QL80_.jpg",
+      "CaID": 3
+    },
+    {
+      "id": "8",
+      "name": "Tab Samsung",
+      "quantity": 0,
+      "price": 33000,
+      "img": "assets\\61Yj0rzrpeL._AC_UF1000,1000_QL80_.jpg",
+      "CaID": 3
+    },
+    {
+      "id": "9",
+      "name": "Dell WorkSation",
+      "quantity": 3,
+      "price": 33000,
+      "img": "assets\\download.jpeg",
+      "CaID": 1
+    },
+    {
+      "id": "10",
+      "name": "Hp",
+      "quantity": 5,
+      "price": 22000,
+      "img": "assets\\download (1).jpeg",
+      "CaID": 1
+    },
+    {
+      "id": "11",
+      "name": "Tab Oppo",
+      "quantity": 3,
+      "price": 33000,
+      "img": "assets\\61Yj0rzrpeL._AC_UF1000,1000_QL80_.jpg",
+      "CaID": 3
+    },
+    {
+      "id": "12",
+      "name": "Tab Samsung",
+      "quantity": 5,
+      "price": 33000,
+      "img": "assets\\61Yj0rzrpeL._AC_UF1000,1000_QL80_.jpg",
+      "CaID": 3
+    },
+    {
+      "id": "4f17",
+      "name": "new pro",
+      "price": "5",
+      "quantity": "10000",
+      "img": "C:\\fakepath\\wolf-howling-at-the-full-moon-silhouette-of-wolf-wallpaper-preview.jpg",
+      "CaID": "cat.Id"
+    },
+    {
+      "id": "5bf9"
+    },
+    {
+      "id": "ab93",
+      "name": "wwwwwwww",
+      "price": "3",
+      "quantity": "3",
+      "img": "C:\\fakepath\\wolf-howling-at-the-full-moon-silhouette-of-wolf-wallpaper-preview.jpg",
+      "CaID": "cat.Id"
+    }
+  ],
+  "category": [
+    {
+      "Id": 1,
+      "name": "labtop",
+      "id": "b1b9"
+    },
+    {
+      "Id": 2,
+      "name": "Mobile",
+      "id": "7a47"
+    },
+    {
+      "Id": 3,
+      "name": "Tab",
+      "id": "5f27"
+    }
+  ]
+}

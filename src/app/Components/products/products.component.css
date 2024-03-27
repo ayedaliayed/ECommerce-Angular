@@ -1,0 +1,18 @@
+/* styles.css (or your component-specific CSS file) */
+
+.card.product-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Base shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow changes */
+  }
+  
+  .card.product-card:hover {
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2), /* Left shadow */
+                2px 2px 10px rgba(0, 0, 0, 0.2), /* Right shadow */
+                0 -2px 10px rgba(0, 0, 0, 0.2), /* Top shadow */
+                0 2px 10px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+  }
+  img{
+    height: 250px;
+    width: 100%;
+  }

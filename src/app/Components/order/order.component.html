@@ -1,0 +1,16 @@
+<div class="mb-3">
+    <select name="" id="" class="form-select form-select-lg" [(ngModel)]="selectCatID">
+        <option value="0">All</option>
+        <option [value]="c.Id" *ngFor="let c of categories">{{c.name}}</option>
+    </select>
+</div>
+
+<div class="bg-secondary">
+<app-products [parentSelectCatID]="selectCatID" (onTotalPricechange)="changeTotalPrice($event)"></app-products>
+</div>
+
+<!-- <h2>Total Order Price is :{{totalprice}}</h2> -->
+
+<!-- <input type="text" #username>
+<h2 #h22></h2> -->
+

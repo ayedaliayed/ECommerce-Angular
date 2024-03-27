@@ -1,0 +1,18 @@
+
+
+<div class="card">
+    <img [src]="product?.img" class="card-img-top" alt="...">
+    <div class="card-body" [style.background-color]>
+
+        <h5 class="card-title">{{ product?.name }}</h5>
+        <p class="card-text">Price: {{ product?.price}}</p>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        
+       
+    </div>
+</div>
+<button class="btn btn-primary mx-2" (click)="Back()">Back</button>
+
+<button [disabled]="previousID==0" class="btn btn-success" (click)="Previous()">Previous</button>
+<button [disabled]="previousID==this.productIDs.length-1" class="btn btn-success mx-2" (click)="Next()">Next</button>
